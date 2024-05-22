@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Videos</title>
+    <style>
+		
+		#pu{
+			background-color:#BFBFBF
+		}
+		#colortitulo{
+			color :blue;
+			
+		}
+		p{
+			background-color:#4343A3;
+			color : white;
+			height : 50px;
+			padding:0;
+			margin:0;
+			font-size: 15px;
+			text-align : center;
+			line-height : 50px;
+		}			
+        /* Estilos para el menú */
+        .menu {
+            float: left;
+            width: 300px;
+            margin-right: 20px;
+            overflow-y: auto; /* Permitir desplazamiento vertical */
+            max-height: calc(100vh - 40px); /* Altura máxima igual al 100% del viewport menos el margen superior e inferior */
+        }
+      
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #1300F2;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 0px;
+            position: relative;
+            padding-left: 40px; /* Espacio para el icono */
+            border :solid 1px #1A1AB3;
+        }
+        .menu a:hover {
+            background-color: #0056b3;
+        }
+        .menu #cab{
+			align: center;
+		}	
+        .menu a::before {
+            content: "";
+            width: 24px; /* Tamaño del icono */
+            height: 24px;
+            background-image: url(''); /* URL del ícono */
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 10px; /* Posición del icono */
+            top: 50%; /* Centrado verticalmente */
+            transform: translateY(-50%);
+        }
+        /* Estilos para los submenús */
+        .submenu {
+            display: none;
+            padding-left: 20px;
+        }
+        .submenu a {
+            display: block;
+            padding: 5px;
+            color: #333;
+            text-decoration: none;
+        }
+        /* Estilos para el contenedor del video */
+        #video-container {
+            margin-top: 20px;
+            margin-left: 300px; /* Para dejar espacio al menú */
+            text-align: center;
+            background-color :#4D4D4D;
+          
+        }
+    </style>
+</head>
+<header>
+
+</header>
+<body id ="pu">
+    <div class="menu">
+        <div id ="cab">
+			<img src="">
+		</div>
+		<p>ELECTROSTATICA</p>
+        <a href="#" onclick="loadVideo('zz_oMmLEe9s')">Cargas eléctricas</a>
+        <a href="#" onclick="loadVideo('GodQw7XwKeQ')">Ley de Coulomb</a>
+        <a href="#" onclick="loadVideo('videoId3')">Campo eléctrico</a> <!-- Agrega más enlaces a otros videos aquí -->
+        <a href="#" onclick="loadVideo('videoId4')">Líneas de fuerza</a>
+        <a href="#" onclick="loadVideo('videoId5')">Líneas de fuerza en un dipolo</a>
+        <a href="#" onclick="loadVideo('videoId4')">Campo entre dos placas paralelas</a>
+        <a href="#" onclick="loadVideo('videoId5')">Diferencia de potencial</a>
+        <a href="#" onclick="loadVideo('videoId4')">Trabajo para mover una carga</a>
+        
+        <p>CAPACITORES</p>
+        <a href="#" onclick="loadVideo('zz_oMmLEe9s')">Capacitores</a>
+        <a href="#" onclick="loadVideo('GodQw7XwKeQ')">Capacitores planos</a>
+        <a href="#" onclick="loadVideo('videoId3')">Circuitos con capacitores </a> <!-- Agrega más enlaces a otros videos aquí -->
+        <a href="#" onclick="loadVideo('GodQw7XwKeQ')">Ejercicios de circuitos con capacitores</a>
+        
+        
+        <p>ELECTRODINAMICA</p>
+        <a href="#" onclick="loadVideo('zz_oMmLEe9s')">Corriente eléctrica</a>
+        <a href="#" onclick="loadVideo('GodQw7XwKeQ')">Resistividad de los materiales</a>
+        <a href="#" onclick="loadVideo('videoId3')">Ley de Ohm</a> <!-- Agrega más enlaces a otros videos aquí -->
+        <a href="#" onclick="loadVideo('videoId4')">Circuitos en serie</a>
+        <a href="#" onclick="loadVideo('videoId5')">Circuitos en paralelo</a>
+        <a href="#" onclick="loadVideo('videoId4')">Circuitos serie-paralelo</a>
+        <a href="#" onclick="loadVideo('videoId5')">Energía y potencia</a>
+        <a href="#" onclick="loadVideo('videoId4')">Efecto Joule</a>
+        <a href="#" onclick="loadVideo('videoId5')">Voltímetros y amperímetros</a>
+        <a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos I</a>
+        <a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos II</a>
+		<a href="#" onclick="loadVideo('videoId4')">Circuitos eléctricos III</a>
+         
+        
+        
+        <p>CALORIMETRIA</p>
+        <a href="#" onclick="loadVideo('videoId5')">Temperatura y calor</a>
+        <a href="#" onclick="loadVideo('videoId4')">Calor específico</a>
+        <a href="#" onclick="loadVideo('videoId5')">Calor latente</a>
+        
+        <a href="#" onclick="loadVideo('videoId5')">Diagramas de T vs Q</a>
+        <a href="#" onclick="loadVideo('videoId4')">Temperatura de equilibrio en mezclas</a>
+        <a href="#" onclick="loadVideo('videoId5')">Transmisión del calor </a>
+        <a href="#" onclick="loadVideo('videoId5')">Ejercicios I </a>
+        <a href="#" onclick="loadVideo('videoId5')">Ejercicios II </a>
+        <a href="#" onclick="loadVideo('videoId5')">Ejercicios III </a>
+        
+        <p>TERMODINAMICA I</p>
+        <a href="#" onclick="loadVideo('videoId6')">Sistemas</a>
+        <a href="#" onclick="loadVideo('videoId7')">Calor y trabajo</a>
+        <a href="#" onclick="loadVideo('videoId7')">Energía interna , calor y trabajo</a>
+        <a href="#" onclick="loadVideo('videoId8')">Transformaciones isobáricas, isocóricas , isotérmicas y adiabáticas</a>
+        
+        <a href="#" onclick="loadVideo('videoId10')">Ejercicios I</a>
+        <a href="#" onclick="loadVideo('videoId4')">Ejercicios II</a>
+        <a href="#" onclick="loadVideo('videoId5')">Ejercicios III</a>
+        <a href="#" onclick="loadVideo('videoId4')">Ejercicios IV</a>
+        <a href="#" onclick="loadVideo('videoId5')">Ejercicios V</a>
+        
+        <p>TERMODINAMICA II</p>
+        
+        <a href="#" onclick="loadVideo('videoId6')">Segundo principio</a>
+        <a href="#" onclick="loadVideo('videoId7')">Entropía</a>
+        <a href="#" onclick="loadVideo('videoId8')">Análisis de problemas</a>
+        <a href="#" onclick="loadVideo('videoId9')">Fluídos en movimiento</a>
+        <a href="#" onclick="loadVideo('videoId10')">Ecuación de Bernoulli</a>
+        <a href="#" onclick="loadVideo('videoId10')">Fluídos reales</a>
+        <a href="#" onclick="loadVideo('videoId10')">Análisis de problemas I</a>
+        <a href="#" onclick="loadVideo('videoId10')">Análisis de problemas II</a>
+       
+        
+    </div>
+	<div id ="muki">
+		<h1 id="colortitulo">Curso Biofísica CBC</h1>
+	</div>
+    <div id="video-container">
+        <!-- El video se cargará aquí -->
+    </div>
+
+    <script>
+        // Cargar reproductor de video vacío al cargar la página
+        window.onload = function() {
+            loadVideo('');
+        };
+		
+        function loadVideo(videoId) {
+            var videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = '<iframe width="860" height="515" src="https://www.youtube.com/embed/' +videoId+ '" frameborder="0" allowfullscreen></iframe>';
+        }
+
+       
+    </script>
+</body>
+</html>
